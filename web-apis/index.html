@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#eddd73",
+              danger: "#ff0000",
+              warning: "#ffff00",
+              success: "#00ff00",
+              info: "#0000ff",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Simple Web APIs</title>
+  </head>
+  <body>
+    <h1 class="text-4xl font-bold text-primary">Web APIs</h1>
+    <button onclick="copyToClipboard('Hello, Clipboard API!')">
+      Copy to Clipboard
+    </button>
+    <button onclick="pasteFromClipboard()">Paste from Clipboard</button>
+
+    <!-- Script -->
+    <script src="clipboard-api.js"></script>
+    <script src="fullscreen.js"></script>
+    <script src="vibration.js"></script>
+    <script src="web-audio-api.js"></script>
+    <script src="battery-api.js"></script>
+  </body>
+</html>
